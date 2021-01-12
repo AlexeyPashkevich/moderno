@@ -340,32 +340,61 @@ div.product-slider__inner.slick-initialized.slick-slider.slick-dotted {
   display: flex;
   justify-content: center;
   align-items: center;
-		&__box {
-      max-width: 650px;
-      width: 100%;
-      min-height: 215px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: $green;
-		}
+  &__box {
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $green;
+  }
 
-		&__title {
-      font-size: 30px;
-      line-height: 30px;
-      color: #fff;
-      margin-right: 45px;
-      max-width: 262px;
-      span{
-        @include f700;
-      }
-		}
+  &__title {
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin-right: 45px;
+    max-width: 262px;
+    span {
+      @include f700;
+    }
+  }
 
-		&__link {
-      font-size: 18px;
-      line-height: 36px;
-      padding: 14px 40px;
-      background-color: #fff;
-		}
+  &__link {
+    font-size: 18px;
+    line-height: 36px;
+    padding: 14px 40px;
+    background-color: #fff;
+  }
 }
 // end author
+
+// start tutorial
+.tutorial {
+  padding: 70px 0 120px;
+}
+.tutorial__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.tutorial__item {
+  max-width: 370px;
+  width: 100%;
+  text-align: center;
+}
+.tutorial__item-images {
+  min-height: 270px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tutorial__item-title {
+  background-color: #f8f8f8;
+  font-size: 24px;
+  text-align: center;
+  @include f700;
+  padding: 30px 1px;
+  color: $bg;
+}
+// end tutorial
