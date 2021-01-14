@@ -466,13 +466,14 @@ div.product-slider__inner.slick-initialized.slick-slider.slick-dotted {
         content: "\f105";
         font-family: "icomoon";
         position: absolute;
-        bottom: 0;
+        bottom: 1px;
         left: 0;
         color: $green;
         font-size: 18px;
       }
     }
   }
+  
   &__form {
     position: relative;
     input {
@@ -524,6 +525,12 @@ div.product-slider__inner.slick-initialized.slick-slider.slick-dotted {
     font-size: 15px;
     color: #919699;
     text-align: center;
+  }
+}
+.footer__col-list {
+  a::before{
+  position: absolute;
+  bottom: 1px;
   }
 }
 .footer__info-phone {
