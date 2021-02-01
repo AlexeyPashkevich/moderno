@@ -88,7 +88,7 @@
   align-items: center;
 }
 .header__btn-login--off {
-  display: none;
+  display: none; // поменять на none поменять на none поменять на none поменять на none поменять на none //
 }
 .header__btn-logout {
   display: none;
@@ -126,6 +126,9 @@
       overflow: auto;
     }
   }
+}
+.basket__box {
+  margin-right: 30px;
 }
 .circle__menu {
   position: absolute;
@@ -254,7 +257,6 @@
   }
 }
 .user {
-  margin-left: 20px;
   margin-right: 20px;
   padding-right: 20px;
   position: relative;
@@ -310,6 +312,106 @@
 }
 
 // end header
+#modal {
+  background-color: $green;
+  max-width: 730px;
+  width: 100%;
+  color: #fff;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+.login__title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  @include f700;
+}
+.login__wrapper {
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  label {
+    position: relative;
+    display: block;
+    width: 100%;
+    &::before {
+      position: absolute;
+      font-family: "icomoon";
+      color: #fff;
+      font-size: 14px;
+      left: 18px;
+      top: 9px;
+    }
+  }
+  .login__label-name::before {
+    content: "\f007";
+    top: 8px;
+  }
+  .login__label-pass::before {
+    content: "\f023";
+  }
+  input {
+    height: 43px;
+    border: none;
+    background-color: #76ae36;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+    &::placeholder {
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+  button {
+    margin-top: 19px;
+    padding: 18px 0 16px;
+    background-color: #fff;
+    width: 140px;
+    text-transform: uppercase;
+    border: none;
+    margin-right: 10px;
+    @include f700;
+    color: #000;
+    text-align: center;
+    box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+  }
+}
+.lost-pass {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.create-acc {
+  margin-top: 19px;
+  padding: 15px 0 15px 28px;
+  text-align: center;
+  width: 245px;
+  background-color: #76ae36;
+  font-size: 18px;
+  position: relative;
+  &::before {
+    content: "\f044";
+    position: absolute;
+    font-family: "icomoon"; 
+    top: 15px;
+    left: 35px;
+  }
+}
+.fancybox-button svg path{
+  color: #fff; 
+}
+// start modal
+
+// end modal
+
 // start search
 .search {
   background-repeat: no-repeat;
@@ -1487,22 +1589,227 @@ button.icon-unsorted {
       content: "\f07a";
       color: #a6b5bb;
       padding-right: 20px;
-      font-family: "icomoon";  
+      font-family: "icomoon";
     }
   }
 }
-.aside__item.sales-number{
+.aside__item.sales-number {
   padding-bottom: 25px;
 }
-.information__line{
+.information__line {
   font-size: 14px;
   color: #70838d;
   margin-top: 20px;
   line-height: 18px;
-  span{
+  span {
     color: $bg;
     @include f500;
   }
 }
-
 // end product-one
+
+// start page 404
+.page-404__wrapper,
+.about__wrapper,
+.contact__wrapper {
+  border: 1px solid #dcdcdc;
+  border-bottom: none;
+  background-color: #fff;
+  margin-bottom: 150px;
+}
+
+.page-404__head,
+.about__head,
+.contact__head {
+  font-size: 24px;
+  color: #444444;
+  padding: 23px 27px;
+  @include f500;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.page-404__inner {
+  text-align: center;
+  background-color: $green;
+  color: #fff;
+}
+
+.page-404__404 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 300px;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  line-height: 300px;
+  position: relative;
+  margin-right: 150px;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/page-404.png);
+    width: 157px;
+    height: 301px;
+    margin-left: 15px;
+  }
+}
+
+.page-404__title {
+  margin-bottom: 30px;
+  @include f300;
+  font-size: 30px;
+  letter-spacing: 8px;
+}
+
+.page-404__text {
+  max-width: 534px;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.page-404__link {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 20px 30px 16px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-bottom: 95px;
+}
+// end page 404
+
+// start about
+.about__wrapper {
+  border-bottom: 1px solid #dcdcdc;
+}
+.about__inner {
+  padding: 0 50px;
+}
+.about__box {
+  h3 {
+    font-size: 20px;
+    @include f700;
+    color: #444;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 50px;
+  }
+}
+// end about
+
+// start contact
+.contact {
+}
+.contact__head {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.contact__inner {
+  padding: 35px 40px 15px;
+}
+.contact__map {
+  margin-bottom: 50px;
+  iframe {
+    width: 100%;
+    height: 415px;
+  }
+}
+.contact__box {
+  display: flex;
+}
+.contact__info {
+  margin-right: 30px;
+  max-width: 330px;
+  width: 100%;
+}
+.contact__info-item {
+  margin-bottom: 30px;
+}
+.contact__info-title {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  @include f500;
+  font-size: 20px;
+  color: $bg;
+  padding-left: 40px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 44px;
+    height: 4px;
+    background-color: $green;
+    left: 40px;
+    bottom: 0;
+  }
+  &::before {
+    color: $green;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+  }
+}
+.contact__info-content {
+  padding-left: 40px;
+  color: #707070;
+  max-width: 271px;
+}
+.contact__form {
+  width: 100%;
+  input {
+    border: none;
+    height: 43px;
+    background-color: #f1f4f5;
+    width: 350px;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-bottom: 30px;
+    &::placeholder {
+      font-size: 15px;
+      color: #7a7a7a;
+    }
+    & + input {
+      margin-left: 25px;
+      color: #7a7a7a;
+    }
+  }
+  textarea {
+    border: none;
+    padding: 13px 17px;
+    height: 190px;
+    width: 100%;
+    display: block;
+    resize: none;
+    background-color: #f1f4f5;
+    margin-bottom: 23px;
+    &::placeholder {
+      font-size: 15px;
+      color: #7a7a7a;
+    }
+  }
+  button {
+    border: none;
+    background-color: $green;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    @include f700;
+    padding: 20px 5px;
+    width: 190px;
+  }
+}
+.contact__form-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  @include f500;
+  color: #333333;
+}
+.contact__form-row {
+  display: flex;
+  justify-content: space-between;
+}
+// end contact
