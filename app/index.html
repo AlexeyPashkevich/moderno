@@ -15,7 +15,7 @@
   <div class="wrapper">
     <div class="content">
       <header class="header">
-        <div class="header__top">
+        <div class="header__top header__top--index">
           <div class="container">
             <div class="header__top-inner">
               <div class="header__logo">
@@ -88,6 +88,7 @@
                         <div class="circle__info-date">01 Dec, 2016</div>
                       </div>
                     </div>
+
                   </div>
                 </div>
                 <div class="basket__box">
@@ -121,8 +122,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="user__box header__btn-login--off">
-                  <a class="user" href="#">
+                <div class="user__box">
+                  <a class="user header__btn-login--off" href="#">
                     <div class="user__inner">
                       <div class="user__images">
                         <img src="images/content/user-login.jpg" alt="">
@@ -150,35 +151,22 @@
                     </ul>
                   </div>
                 </div>
-                <a class="header__btn header__btn-login" data-fancybox data-src="#modal" href="javascript:;">Login</a>
-                <div style="display: none;" id="modal">
-                  <div class="login__wrapper">
-                    <div class="login__title">
-                      LOGIN
-                    </div>
-                    <form>
-                      <label class="login__label-name">
-                        <input type="text" placeholder="Name" required>
-                      </label>
-                      <label class="login__label-pass">
-                        <input type="password" placeholder="Password" required>
-                      </label>
-                      <button type="submit">submit</button>
-                      <a class="create-acc" href="#">Creat An Account?</a>
-                      <a class="lost-pass" href="#">Lost Password?</a>
-                    </form>
-                  </div>
-                </div>
-
+                <a class="header__btn header__btn-login" href="#">Login</a>
                 <a class="header__btn header__btn-logout header__btn-login--off" href="#">Logout</a>
                 <a class="header__btn header__btn-register" href="#">Register</a>
               </div>
+              <div class="header__btn-menu icon-user"></div>
             </div>
           </div>
         </div>
         <div class="header__menu">
           <div class="container">
             <nav class="menu">
+              <div class="menu__btn">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
               <ul class="menu__list">
                 <li>
                   <a href="#">
@@ -1042,7 +1030,7 @@ Om1vZGlmeQAyMDIxLTAxLTExVDAwOjU2OjIzKzAzOjAwifQODwAAAABJRU5ErkJggg==" />
         <div class="footer__content">
           <div class="container">
             <div class="footer__inner">
-              <div class="footer__col">
+              <div class="footer__col footer__col-adress">
                 <div class="footer__col-title">
                   About Company
                 </div>
@@ -1083,7 +1071,7 @@ Om1vZGlmeQAyMDIxLTAxLTExVDAwOjU2OjIzKzAzOjAwifQODwAAAABJRU5ErkJggg==" />
                   <li><a href="#">Contact Us</a></li>
                 </ul>
               </div>
-              <div class="footer__col">
+              <div class="footer__col footer__col-social">
                 <div class="footer__col-title">
                   Follow Us On
                 </div>
@@ -1119,7 +1107,7 @@ Om1vZGlmeQAyMDIxLTAxLTExVDAwOjU2OjIzKzAzOjAwifQODwAAAABJRU5ErkJggg==" />
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/libs/min.js"></script>
+    <script src="js/libs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
       integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
       crossorigin="anonymous"></script>

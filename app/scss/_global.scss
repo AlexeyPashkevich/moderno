@@ -9,13 +9,15 @@ html {
 html,
 body {
   height: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
 a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
 }
-p{
+p {
   margin: 0;
   padding: 0;
 }
@@ -66,8 +68,8 @@ body {
     padding: 0 15px;
   }
 }
-.page-content{
-  background-color: $gray; 
+.page-content {
+  background-color: $gray;
 }
 .title {
   text-align: center;
@@ -107,12 +109,12 @@ body {
           position: absolute;
           left: 8px;
           color: $green;
-        } 
+        }
         padding-left: 24px;
       }
-      &:last-child{
+      &:last-child {
         a,
-        span{
+        span {
           color: $bg;
         }
       }
